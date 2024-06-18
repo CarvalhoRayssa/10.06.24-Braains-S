@@ -9,20 +9,21 @@ const metadeAlturaAvatar = alturaInicialAvatar / 2;
 
 const posicaoCenarioSuperiorInicial = 0;
 const posicaoCenarioEsquerdaInicial = 0;
+const divCenario = document.getElementById('cenario');
 const imgCenario = document.createElement('img');
-imgCenario.src = './game.jpg';
+imgCenario.src = './cenario.jpg';
 imgCenario.style.position = "fixed";
 imgCenario.style.top = posicaoCenarioSuperiorInicial + medida;
 imgCenario.style.left = posicaoCenarioEsquerdaInicial + medida;
 imgCenario.style.width = (window.screen.width * 4) + medida;
 imgCenario.style.height = (window.screen.height * 4) + medida;
 imgCenario.style.zIndex = -1;
-document.body.appendChild(imgCenario);
+divCenario.appendChild(imgCenario);
 
 const posicaoAvatarSuperiorInicial = centroTelaVertical - metadeAlturaAvatar;
 const posicaoAvatarEsquerdaInicial = centroTelaHorizontal - metadeLarguraAvatar;
 const imgAvatar = document.createElement('img');
-imgAvatar.src = './zp.png';
+imgAvatar.src = './avatar.png';
 imgAvatar.style.position = "absolute";
 imgAvatar.style.top = posicaoAvatarSuperiorInicial + medida;
 imgAvatar.style.left = posicaoAvatarEsquerdaInicial + medida;
